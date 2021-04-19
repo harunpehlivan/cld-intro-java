@@ -105,7 +105,7 @@ The full set of credentials are used to instantiate Cloudinary, and this can be 
 Type `CLOUDINARY_URL` as the Key and your credentials starting with `cloudinary://` as the value.
 
 
-<img width="400" src="./images/add-env-run.gif" alt="Add Environment variable and run">
+<img width="800" src="./images/add-env-run.gif" alt="Add Environment variable and run">
 
 ### Maven
 
