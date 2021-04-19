@@ -103,7 +103,7 @@ Type `CLOUDINARY_URL` as the Key and your credentials starting with `cloudinary:
 
 You don't need to install Maven if you are using an IDE like Eclipse.  The `pom.xml` file has been set up for the course and all the dependencies will be loaded by Eclipse.
 
-There are 4 dependency artifacts listed in the pom.xml file:
+There are 4 dependency artifacts listed in the [pom.xml](./pom.xml) file:
 
 
 1. `cloudinary-http44` - we will rely on this library for backend Cloudinary functionality in this course
