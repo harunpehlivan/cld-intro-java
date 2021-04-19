@@ -2,8 +2,10 @@
 
 This repo is used in the Cloudinary training course **Introduction to Cloudinary Using Java** 
 
-The Cloudinary Java SDK will run on Java 6 and any higher version. For purposes of training, we are using **Java Version 8** and Eclipse.  
 
+## Setup 
+
+The Cloudinary Java SDK will run on Java 6 and any higher version. For purposes of training, we are using **Java Version 8** and Eclipse.  
 
 
 The Cloudinary libraries are made available with Maven.  This repo includes a full Eclipse project configured with Cloudinary libraries.
@@ -11,11 +13,11 @@ The Cloudinary libraries are made available with Maven.  This repo includes a fu
 You may import the Java code used into your favorite IDE, such as [Intellij](https://www.jetbrains.com/idea/) or [VS Code](https://code.visualstudio.com/docs/languages/java).  You'll find the code in repo in the folder `src/main/java/cld_intro_java/`.
 
 
-## Install Java
+### Install Java
 
 You can find instructions for downloading and installing Java 8 for many environments [here](https://docs.oracle.com/javase/8/docs/technotes/guides/install/install_overview.html).  You'll find the Java 8 downloads [here](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html).  
 
-## Verify your version of Java is 6+
+### Verify your version of Java is 6+
 
 ```
 java -version
@@ -32,40 +34,44 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.281-b09, mixed mode)
 ```
 
 
-## Install Eclipse
+### Install Eclipse
 
 You can find the download for the Eclipse installer [here](https://www.eclipse.org/downloads/packages/installer).
 
 In this course we will be coding in the format of a Java Application and not a Web Application.  When prompted to choose, you can choose **Eclipse IDE for Java Developers** for purposes of this training.
 
-![Eclipse for Java Devs](./images/eclipse-installer.jpg)
+<img width="400" src="./images/eclipse-installer.jpg" alt="Eclipse for Java Devs">
 
-## Download cld-intro-java GitHub Repo
+### Download cld-intro-java GitHub Repo
 
 Download [this project](https://github.com/cloudinary-training/cld-intro-java).  
 
-## Open Project in Eclipse
+### Open Project in Eclipse
 
 If you are following along and using Eclipse, you should be able to import this project directly into Eclipse.  In this example, I have downloaded this repo in `~/cld-coursework`.  When I unzip the download, I have a directory named `cld-intro-java-master`.  The next step is to open this project in Eclipse.
 
 I'll use the default Eclipse workspace  `~/eclipse-workspace` and I'll open the project directly from the filesystem.
 
-### Open From Filesystem
+#### Open From Filesystem
 
-![Open from file system](./images/eclipse-open-from-file-system.jpg)
+<img width="400" src="./images/eclipse-open-from-file-system.jpg" alt="Open from file system">
 
-### Select Directory
 
-![Select directory](./images/eclipse-select-directory.jpg)
+#### Select Directory
 
-### View Project in Eclipse
+<img width="400" src="./images/eclipse-select-directory.jpg" alt="Select directory">
+
+
+#### View Project in Eclipse
 
  Your project should look something like the picture below.
 
- ![Eclipse Project](./images/course-code-in-eclipse.jpg)
+<img width="400" src="./images/course-code-in-eclipse.jpg" alt="Eclipse Project">
 
 
-## Run Main.java
+## Executing Code
+
+### Run Main.java
 
 The course is broken into modules that focus on Upload, Manage and Transform.  You'll find most of the code commented out. The instructor will explain the concept, uncomment the code, run it and then describe the result.  
 
@@ -75,7 +81,7 @@ You will always be controlling output by uncommenting modules in `Main.java` and
 
 All local assets used in training, are located in the `./assets` directory
 
-## Providing Cloudinary Credentials
+### Providing Cloudinary Credentials
 
 You will need to set up a Cloudinary account for this training.  It is recommended that you create a training account for this training to keep this work separate from any work you do in a production Cloudinary account.  You only need an email address that can be verified to set up this account.
 
@@ -91,15 +97,17 @@ Cloudinary provides 3 credentials for developers to use in interacting with SDK'
 
 Cloudinary provides CLOUDINARY_URL as an environment variable KEY.  You can copy the full value in your console.  Click on the `Copy to Clipboard` link to copy the full URL into your clipboard.  The format of the CLOUDINARY_URL is `cloudinary://API_KEY:API_SECRET@CLOUD_NAME`.  This environment variable, therefore, encapsulates all of the Cloudinary credentials.
 
-![CLOUDINARY_URL](./images/cloudinary-url.jpg)
+<img width="400" src="./images/cloudinary-url.jpg" alt="CLOUDINARY_URL">
+
 
 The full set of credentials are used to instantiate Cloudinary, and this can be done if the Environment variables is in your session, as we'll do by adding the CLOUDINARY_URL to the Eclipse list of env variables for `Main.java`.
 
 Type `CLOUDINARY_URL` as the Key and your credentials starting with `cloudinary://` as the value.
 
-![Add Environment variable and run](./images/add-env-run.gif)
 
-## Maven
+<img width="400" src="./images/add-env-run.gif" alt="Add Environment variable and run">
+
+### Maven
 
 You don't need to install Maven if you are using an IDE like Eclipse.  The `pom.xml` file has been set up for the course and all the dependencies will be loaded by Eclipse.
 
