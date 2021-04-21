@@ -12,6 +12,18 @@ public class Main {
 
 //		CloudinaryUtils.runner(cloudinary);
 
+//		AutouploadFetch.runner(cloudinary);
+
+//		Manage.runner(cloudinary);
+
+//		OptimizeTransformations.runner(cloudinary);
+
+//		AestheticsTransformations.runner(cloudinary);
+
+//		NamedTransformations.runner(cloudinary);
+
+//		Presets.runner(cloudinary);
+
 	}
 
 }
