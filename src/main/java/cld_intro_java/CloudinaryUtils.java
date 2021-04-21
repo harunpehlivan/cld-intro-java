@@ -3,19 +3,17 @@ package cld_intro_java;
 import com.cloudinary.Cloudinary;
 
 /**
- * @author rebeccapeltz
+ * @author training
  *
  */
 public class CloudinaryUtils {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-		// these utility functions just create strings
-		Cloudinary cloudinary = new Cloudinary(System.getenv("CLOUDINARY_URL"));
+	public static void runner(Cloudinary cloudinary) {
 		System.out.println(cloudinary.config.cloudName);
-		System.out.println(cloudinary.url().generate("sample"));
-		System.out.println(cloudinary.url().imageTag("sample"));
-		System.out.println(cloudinary.url().videoTag("test"));
+		System.out.println(cloudinary.url().generate("cheesecake"));
+		System.out.println(cloudinary.url().imageTag("cheesecake"));
+		System.out.println(cloudinary.url().videoTag("video"));
 	}
 }

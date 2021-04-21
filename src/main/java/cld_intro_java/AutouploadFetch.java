@@ -23,9 +23,7 @@ public class AutouploadFetch {
 //		System.out.println(cloudinary.url().transformation(new Transformation().width(300).height(300).crop("thumb")).imageTag("remote-media/images/dolphin.jpg"));
 //		System.out.println(cloudinary.url().transformation(new Transformation().width(300).height(300).crop("thumb")).generate("remote-media/images/dolphin.jpg"));
 
-		System.out.println(cloudinary.url().generate("cheesecake"));
-//		System.out.println(cloudinary.url().imageTag("cheesecake"));
-//		System.out.println(cloudinary.url().videoTag("cheesecake"));
+
 
 	}
 

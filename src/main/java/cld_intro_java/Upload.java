@@ -1,5 +1,7 @@
 package cld_intro_java;
 
+import java.util.Map;
+
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
 
@@ -7,60 +9,65 @@ import com.cloudinary.utils.ObjectUtils;
  * Hello world!
  *
  */
-public class Upload 
-{
+public class Upload {
+	@SuppressWarnings({ "unchecked", "unused" })
 
-	public static void runner(Cloudinary cloudinary) throws Exception {
-		CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/cheesecake.jpg",ObjectUtils.emptyMap()));
-	}
-	
-	
 	/**
-	 * @param args
-	 * @throws Exception
+	 * 
+	 * @param cloudinary Authenticated Cloudinary Object
+	 * 
+	 *                   Suppressing warning on "unchecked" because
+	 *                   ObjectUtils.emptyMap and ObjectUtils.asMap can't guarantee
+	 *                   run time code will return <Object, String>.
+	 * 
+	 *                   Suppressing warning on "unused" for training we may not use
+	 *                   or comment out
+	 * 
 	 */
-	/**
-	 * @param args
-	 * @throws Exception
-	 */
-	public static void main( String[] args ) throws Exception
-	{
-		Cloudinary cloudinary = new Cloudinary(System.getenv("CLOUDINARY_URL"));
-		System.out.println(cloudinary.config.cloudName);
+	public static void runner(Cloudinary cloudinary) {
+		try {
+			// Use an empty map for no options
+			Map<String, Object> noOptions = ObjectUtils.emptyMap();
+			Map<String, Object> options = null;
 
-		//upload an image
-//		Map<String,Object> options = ObjectUtils.emptyMap();
-//		JSONObject result = (JSONObject) cloudinary.uploader().upload("./assets/cheesecake.jpg",options);
-		CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/cheesecake.jpg",ObjectUtils.emptyMap()));
+			// upload an image with no options
+//			CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/cheesecake.jpg", noOptions));
 
+			// upload a video
+			options = ObjectUtils.asMap("resource_type", "video");
+//				CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/video.mp4",options));
 
-		//upload a video
-//		jsonPrint(cloudinary.uploader().upload("./assets/video.mp4",ObjectUtils.asMap("resource_type", "video")));
+			// upload a raw file
+			options = ObjectUtils.asMap("resource_type", "raw");
+//				CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/BLKCHCRY.TTF",options));
 
-		//upload a raw file
-		//System.out.println(cloudinary.uploader().upload("./assets/BLKCHCRY.TTF",ObjectUtils.asMap("resource_type", "raw")))
+			// upload an image with public_id
+			options = ObjectUtils.asMap("public_id", "dog");
+//				CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/dog.jpg",options));
 
-		//upload an image with public_id
-	//	JSONObject json = new JSONObject(cloudinary.uploader().upload("./assets/dog.jpg",ObjectUtils.asMap("public_id", "dog"))); // Convert text to object
-		//System.out.println(new JSONObject(cloudinary.uploader().upload("./assets/dog.jpg",ObjectUtils.asMap("public_id", "dog"))).get("url")); 
-//		System.out.println(new JSONObject(cloudinary.uploader().upload("./assets/dog.jpg",ObjectUtils.asMap("public_id", "dog"))).toString(4)); 
+			// upload a video with public_id
+			options = ObjectUtils.asMap("resource_type", "video", "public_id", "video");
+//			CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/video.mp4", options));
 
+			// With use_filename and not unique filename - the public id will be the
+			// filename
+			options = ObjectUtils.asMap("use_filename", true, "unique_filename", false);
+//			CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/cheesecake.jpg", options));
 
-		//System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(cloudinary.uploader().upload("./assets/dog.jpg",ObjectUtils.asMap("public_id", "dog2"))));
+			// Upload image to a folder using public id
+			options = ObjectUtils.asMap("public_id", "food/my_favorite/cheesecake");
+//				CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/cheesecake.jpg",options));
 
-		//With use_filename and unique filename
-//		System.out.println(cloudinary.uploader().upload("./assets/cheesecake.jpg",ObjectUtils.asMap("use_filename", true, "unique_filename", true)));
+			// Upload image to a folder using folder
+			options = ObjectUtils.asMap("folder", "pets/my_favorite");
+//				CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/dog.jpg",ObjectUtils.asMap("folder", "pets/my_favorite")));
 
-		//With use_filename and not unique filename
-		CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/cheesecake.jpg",ObjectUtils.asMap("use_filename", true, "unique_filename", false)));
+			// Upload a remote asset
+//				CourseUtils.jsonPrint(cloudinary.uploader().upload("https://cdn.pixabay.com/photo/2015/03/26/09/39/cupcakes-690040__480.jpg",noOptions));
 
-		//Upload image to a folder using public id
-		//System.out.println(cloudinary.uploader().upload("./assets/cheesecake.jpg",ObjectUtils.asMap("public_id", "food/my_favorite/cheesecake")));
-		
-		//Upload image to a folder using folder
-		//System.out.println(cloudinary.uploader().upload("./assets/dog.jpg",ObjectUtils.asMap("folder", "pets/my_favorite")));
-
-		//Upload a remote asset
-		//System.out.println(cloudinary.uploader().upload("https://cdn.pixabay.com/photo/2015/03/26/09/39/cupcakes-690040__480.jpg",ObjectUtils.emptyMap()));
+		} catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
+
 }
