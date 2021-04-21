@@ -31,7 +31,7 @@ public class Upload {
 			Map<String, Object> options = null;
 
 			// upload an image with no options
-//			CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/cheesecake.jpg", noOptions));
+			CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/cheesecake.jpg", noOptions));
 
 			// upload a video
 			options = ObjectUtils.asMap("resource_type", "video");

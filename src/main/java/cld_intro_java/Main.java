@@ -8,7 +8,7 @@ public class Main {
 		Cloudinary cloudinary = new Cloudinary(System.getenv("CLOUDINARY_URL"));
 		System.out.println(cloudinary.config.cloudName);
 
-		Upload.runner(cloudinary);
+//		Upload.runner(cloudinary);
 
 //		CloudinaryUtils.runner(cloudinary);
 

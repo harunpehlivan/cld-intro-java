@@ -1,20 +1,38 @@
 package cld_intro_java;
 
+import java.util.Map;
+
 import com.cloudinary.Api;
 import com.cloudinary.Cloudinary;
+import com.cloudinary.utils.ObjectUtils;
 
 public class Manage {
 
+	@SuppressWarnings("unchecked")
 	public static void runner(Cloudinary cloudinary) {
-		try {
 
-		} catch (Error e) {
+		try {
+			// Use an empty map for no options
+			Map<String, Object> noOptions = ObjectUtils.emptyMap();
+
+			Api api = cloudinary.api();
+//			CourseUtils.jsonPrint(api.resources(noOptions));
+
+//			CourseUtils.jsonPrint(api.resources(ObjectUtils.asMap("type", "upload", "prefix", "sample")));
+
+			// Rename an asset, default overwrite is false
+//			CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/cheesecake.jpg",
+//					ObjectUtils.asMap("public_id", "cheesecake")));
+//			CourseUtils.jsonPrint(
+//					cloudinary.uploader().rename("cheesecake", "my_cheesecake", ObjectUtils.asMap("overwrite", true)));
+
+		} catch (Exception e) {
 			System.out.println(e.getLocalizedMessage());
 		}
 	}
 
 	public static void main(String[] args) throws Exception {
-		// Cloduianry config
+		// Cloudinary config
 		Cloudinary cloudinary = new Cloudinary();
 		// Reference the admin API
 		Api api = cloudinary.api();
@@ -27,7 +45,7 @@ public class Manage {
 		// System.out.println(api.resources(ObjectUtils.asMap("max_results",500)));
 
 		// Search by prefix (public id "starts with")
-		// System.out.println(api.resources(ObjectUtils.asMap("prefix","sample")));
+//		System.out.println(api.resources(ObjectUtils.asMap("type", "upload", "prefix", "sample")));
 
 		// Rename an asset, default overwrite is false
 		// System.out.println(cloudinary.uploader().upload("./assets/cheesecake.jpg",
