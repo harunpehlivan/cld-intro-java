@@ -14,6 +14,7 @@ public class CloudinaryUtils {
 		System.out.println(cloudinary.config.cloudName);
 		System.out.println(cloudinary.url().generate("cheesecake"));
 		System.out.println(cloudinary.url().imageTag("cheesecake"));
+		System.out.println(cloudinary.url().resourceType("video").generate("cheesecake"));
 		System.out.println(cloudinary.url().videoTag("video"));
 	}
 }

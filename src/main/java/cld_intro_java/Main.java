@@ -16,6 +16,8 @@ public class Main {
 
 //		Manage.runner(cloudinary);
 
+//		UploadForTransformations.runner(cloudinary);
+
 //		OptimizeTransformations.runner(cloudinary);
 
 //		AestheticsTransformations.runner(cloudinary);
