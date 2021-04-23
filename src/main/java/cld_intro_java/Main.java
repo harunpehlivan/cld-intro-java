@@ -12,7 +12,7 @@ public class Main {
 
 //		CloudinaryUtils.runner(cloudinary);
 
-//		AutouploadFetch.runner(cloudinary);
+		AutouploadFetch.runner(cloudinary);
 
 //		Manage.runner(cloudinary);
 
