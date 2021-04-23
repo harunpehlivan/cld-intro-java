@@ -6,6 +6,7 @@ public class Main {
 
 	public static void main(String[] args) throws Exception {
 		Cloudinary cloudinary = new Cloudinary(System.getenv("CLOUDINARY_URL"));
+		cloudinary.config.secure = true;
 		System.out.println(cloudinary.config.cloudName);
 
 //		Upload.runner(cloudinary);
@@ -14,13 +15,13 @@ public class Main {
 
 //		AutouploadFetch.runner(cloudinary);
 
-		Manage.runner(cloudinary);
+//		Manage.runner(cloudinary);
 
 //		UploadForTransformations.runner(cloudinary);
 
 //		OptimizeTransformations.runner(cloudinary);
 
-//		AestheticsTransformations.runner(cloudinary);
+		AestheticsTransformations.runner(cloudinary);
 
 //		NamedTransformations.runner(cloudinary);
 
