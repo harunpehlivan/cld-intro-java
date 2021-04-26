@@ -1,6 +1,7 @@
 package cld_intro_java;
 
 import com.cloudinary.Cloudinary;
+import com.cloudinary.utils.ObjectUtils;
 
 /**
  * Hello world!
@@ -25,10 +26,10 @@ public class Upload {
 		try {
 			// Use an empty map for no options
 			// upload an image with no options
-//			CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/cheesecake.jpg", ObjectUtils.emptyMap()));
+			// CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/cheesecake.jpg", ObjectUtils.emptyMap()));
 
 			// upload a video
-//			CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/video.mp4", 
+//			CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/earth.mp4", 
 //					ObjectUtils.asMap("resource_type", "video")));
 
 			// upload a raw file
@@ -40,8 +41,8 @@ public class Upload {
 //					.jsonPrint(cloudinary.uploader().upload("./assets/dog.jpg", ObjectUtils.asMap("public_id", "dog")));
 
 			// upload a video with public_id
-//			CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/video.mp4",
-//					ObjectUtils.asMap("resource_type", "video", "public_id", "video")));
+//			CourseUtils.jsonPrint(cloudinary.uploader().upload("./assets/earth.mp4",
+//					ObjectUtils.asMap("resource_type", "video", "public_id", "earth")));
 
 			// With use_filename and not unique filename - the public id will be the
 			// filename

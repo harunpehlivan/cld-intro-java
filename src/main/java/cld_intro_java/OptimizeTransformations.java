@@ -44,8 +44,8 @@ public class OptimizeTransformations {
 //					.generate("cheesecake"));
 
 			// Crop with gravity: auto, fill vs thumb
-			// Not all crop types can use gravity, only: crop, fill, lfill, fill_pad (auto g
-			// only) or thumb
+			// Not all crop types can use gravity, only: crop, pad, fill, lfill, fill_pad or thumb
+			
 //			System.out.println(cloudinary.url()
 //					.transformation(new Transformation().width(300).height(300).crop("fill").gravity("auto"))
 //					.generate("face"));

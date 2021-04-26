@@ -22,8 +22,8 @@ public class UploadForTransformations {
 				cloudinary.uploader().upload("./assets/shirt_only.png", ObjectUtils.asMap("public_id", "shirt_only")));
 		System.out.println(
 				cloudinary.uploader().upload("./assets/working.jpg", ObjectUtils.asMap("public_id", "working")));
-		System.out.println(cloudinary.uploader().upload("./assets/video.mp4",
-				ObjectUtils.asMap("public_id", "video", "resource_type", "video")));
+		System.out.println(cloudinary.uploader().upload("./assets/earth.mp4",
+				ObjectUtils.asMap("public_id", "earth", "resource_type", "video")));
 	}
 
 }
