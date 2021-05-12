@@ -9,9 +9,7 @@ public class OptimizeTransformations {
 
 			// Cropping
 
-			// Scale is default - accepts 2 ints and first is width, second is height
 			// Scale default cropping mode with 1 dimension is scale
-
 //			System.out.println(cloudinary.url().transformation(new Transformation().width(300).crop("scale"))
 //					.generate("cheesecake"));
 
@@ -20,7 +18,7 @@ public class OptimizeTransformations {
 //					.transformation(new Transformation().width(300).height(400).crop("scale")).generate("cheesecake"));
 
 			// Fit: applying 2 dimensions without skew
-			// Media info shows width o300 and height adjusted to prevent skew
+			// Media info shows width of 300 and height of 400 adjusted to prevent skew
 //			System.out.println(cloudinary.url().transformation(new Transformation().width(300).height(400).crop("fit"))
 //					.generate("cheesecake"));
 
@@ -39,13 +37,12 @@ public class OptimizeTransformations {
 //			System.out.println(cloudinary.url()
 //					.transformation(new Transformation().width(300).height(300).crop("thumb").gravity("auto"))
 //					.generate("dog"));
-//			System.out.println(cloudinary.url()
-//					.transformation(new Transformation().width(300).height(300).crop("thumb").gravity("auto"))
-//					.generate("cheesecake"));
 
 			// Crop with gravity: auto, fill vs thumb
-			// Not all crop types can use gravity, only: crop, pad, fill, lfill, fill_pad or thumb
-			
+			// Not all crop types can use gravity, only: crop, thumb, fill, lfill, fill_pad
+			// or
+			// thumb
+
 //			System.out.println(cloudinary.url()
 //					.transformation(new Transformation().width(300).height(300).crop("fill").gravity("auto"))
 //					.generate("face"));
