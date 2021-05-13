@@ -69,7 +69,7 @@ public class AestheticsTransformations {
 //					.println(cloudinary
 //							.url().transformation(new Transformation().width(300).height(300).crop("thumb")
 //									.gravity("auto").fetchFormat("auto").quality("auto").effect("cartoonify"))
-//							.generate("lake.jpg"));
+//							.generate("face.jpg"));
 
 			// Overlay
 			// Text over image
