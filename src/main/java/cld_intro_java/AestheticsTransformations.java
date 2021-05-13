@@ -3,7 +3,6 @@ package cld_intro_java;
 import com.cloudinary.Cloudinary;
 import com.cloudinary.Transformation;
 import com.cloudinary.transformation.Layer;
-import com.cloudinary.transformation.TextLayer;
 
 public class AestheticsTransformations {
 
@@ -49,7 +48,7 @@ public class AestheticsTransformations {
 			// Outline effect for transparent images
 //			System.out.println(cloudinary.url().transformation(
 //					new Transformation().width(300).crop("scale").quality("auto").effect("outline:15").color("orange"))
-//					.generate("blackberry.jpg"));
+//					.generate("grapes.png"));
 
 			// Improve color, contrast, lightness
 //			System.out.println(cloudinary.url()
@@ -98,7 +97,10 @@ public class AestheticsTransformations {
 //					.transformation(new Transformation().width(400).crop("scale").chain()
 //							.overlay(new Layer().publicId("logo")).height("50").gravity("north_west").x(10).y(10))
 //					.generate("earth.mp4"));
-
+//			
+//			System.out.println(
+//					cloudinary.url().transformation(new Transformation().effect("boomerang").chain().effect("loop:2"))
+//							.resourceType("video").generate("purple.mp4"));
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
