@@ -23,9 +23,9 @@ public class Main {
 
 //		AestheticsTransformations.runner(cloudinary);
 
-//		NamedTransformations.runner(cloudinary);
-
 //		Presets.runner(cloudinary);
+
+//		NamedTransformations.runner(cloudinary);
 
 	}
 
