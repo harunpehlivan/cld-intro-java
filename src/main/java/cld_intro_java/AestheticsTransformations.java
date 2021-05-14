@@ -3,6 +3,7 @@ package cld_intro_java;
 import com.cloudinary.Cloudinary;
 import com.cloudinary.Transformation;
 import com.cloudinary.transformation.Layer;
+import com.cloudinary.transformation.TextLayer;
 
 public class AestheticsTransformations {
 
@@ -23,8 +24,8 @@ public class AestheticsTransformations {
 //							.crop("thumb").gravity("auto").fetchFormat("auto").quality("auto").radius("max"))
 //					.generate("dog.jpg"));
 
-			// crop pad to capture full image with padding to prevent skew
-			// change AR vertical to horizontal
+			// crop thumb
+			// change AR to a square
 //			System.out
 //					.println(cloudinary.url()
 //							.transformation(new Transformation().width(300).height(300).crop("thumb").gravity("auto")
@@ -38,11 +39,12 @@ public class AestheticsTransformations {
 //							.fetchFormat("auto").quality("auto").radius("max").effect("tint:40:magenta"))
 //					.generate("face.jpg"));
 
-			// Duotone: chained transformation grayscale + tint
+			// Duotone: chained transformation grayscale + tint, each effect needs its own
+			// layer
 //			System.out.println(cloudinary.url()
 //					.transformation(new Transformation().width(300).height(300).crop("thumb").gravity("face")
-//							.fetchFormat("auto").quality("auto").radius("max").effect("grayscale").chain()
-//							.effect("tint:40:magenta").fetchFormat("auto").quality("auto"))
+//							.radius("max").effect("grayscale").chain().effect("tint:40:magenta").chain()
+//							.fetchFormat("auto").quality("auto"))
 //					.generate("face.jpg"));
 
 			// Outline effect for transparent images
@@ -98,9 +100,6 @@ public class AestheticsTransformations {
 //							.overlay(new Layer().publicId("logo")).height("50").gravity("north_west").x(10).y(10))
 //					.generate("earth.mp4"));
 //			
-//			System.out.println(
-//					cloudinary.url().transformation(new Transformation().effect("boomerang").chain().effect("loop:2"))
-//							.resourceType("video").generate("purple.mp4"));
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
