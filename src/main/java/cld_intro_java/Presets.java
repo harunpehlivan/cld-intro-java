@@ -2,6 +2,7 @@ package cld_intro_java;
 
 import com.cloudinary.Api;
 import com.cloudinary.Cloudinary;
+import com.cloudinary.utils.ObjectUtils;
 
 public class Presets {
 	public static void runner(Cloudinary cloudinary) {
@@ -28,5 +29,4 @@ public class Presets {
 			System.out.println(e.getMessage());
 		}
 	}
-
 }
