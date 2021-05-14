@@ -1,6 +1,7 @@
 package cld_intro_java;
 
 import com.cloudinary.Cloudinary;
+import com.cloudinary.Transformation;
 
 public class AutouploadFetch {
 	@SuppressWarnings("rawtypes")
@@ -25,7 +26,7 @@ public class AutouploadFetch {
 //			System.out.println(cloudinary.url().resourceType("video").generate("remote-media/video/rooster.mp4"));
 
 //			System.out.println(cloudinary.url().resourceType("video")
-//					.transformation(new Transformation().width(300).height(300).crop("thumb"))
+//					.transformation(new Transformation().width(300).height(300).crop("fit"))
 //					.generate("remote-media/video/rooster.mp4"));
 
 		} catch (Error e) {

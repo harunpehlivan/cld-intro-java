@@ -3,6 +3,12 @@ package cld_intro_java;
 import com.cloudinary.Api;
 import com.cloudinary.Cloudinary;
 
+import java.util.Arrays;
+
+import org.cloudinary.json.JSONObject;
+
+import com.cloudinary.utils.ObjectUtils;
+
 public class Manage {
 
 	@SuppressWarnings({ "unused" })
@@ -19,6 +25,10 @@ public class Manage {
 
 			// List up to 500 assets
 //			CourseUtils.jsonPrint(api.resources(ObjectUtils.asMap("max_results", 500)));
+//			ApiResponse response = (ApiResponse) api.resources(ObjectUtils.asMap("max_results", 500));
+//			@SuppressWarnings("unchecked")
+//			JSONObject responseJSON = new JSONObject(api.resources(ObjectUtils.asMap("max_results", 500)));
+//			System.out.println("number of assets:" + responseJSON.getJSONArray("resources").length());
 
 			// Search by prefix (public id "starts with")
 //			CourseUtils.jsonPrint(api.resources(ObjectUtils.asMap("type", "upload", "prefix", "sample")));
@@ -56,17 +66,17 @@ public class Manage {
 //					.jsonPrint(cloudinary.uploader().addTag("water", new String[] { "lake" }, ObjectUtils.emptyMap()));
 //			CourseUtils.jsonPrint(api.resourcesByTag("water", ObjectUtils.emptyMap()));
 
-			// Remove a single tag by name and then search by removed tag and unremoved tag
+			// Remove a single tag by name and then search by removed tag and existing tag
 //			CourseUtils.jsonPrint(
 //					cloudinary.uploader().removeTag("berries", new String[] { "blackberry" }, ObjectUtils.emptyMap()));
-//			CourseUtils.jsonPrint(api.resourcesByTag("berries", ObjectUtils.emptyMap()));
-//			CourseUtils.jsonPrint(api.resourcesByTag("fruit", ObjectUtils.emptyMap()));
+//			CourseUtils.jsonPrint(api.resourcesByTag("berries", ObjectUtils.asMap("tags", true)));
+//			CourseUtils.jsonPrint(api.resourcesByTag("fruit", ObjectUtils.asMap("tags", true)));
 
 			// Remove all tags
 //			CourseUtils.jsonPrint(
 //					cloudinary.uploader().removeAllTags(new String[] { "blackberry", "lake" }, ObjectUtils.emptyMap()));
-//			CourseUtils.jsonPrint(api.resourcesByTag("fruit", ObjectUtils.emptyMap()));
-//			CourseUtils.jsonPrint(api.resourcesByTag("water", ObjectUtils.emptyMap()));
+//			CourseUtils.jsonPrint(api.resourcesByTag("fruit", ObjectUtils.asMap("tags", true)));
+//			CourseUtils.jsonPrint(api.resourcesByTag("water", ObjectUtils.asMap("tags", true)));
 
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
