@@ -11,7 +11,6 @@ public class CloudinaryUtils {
 	 * @param args
 	 */
 	public static void runner(Cloudinary cloudinary) {
-		System.out.println(cloudinary.config.cloudName);
 		System.out.println(cloudinary.url().generate("cheesecake"));
 		System.out.println(cloudinary.url().imageTag("cheesecake"));
 		System.out.println(cloudinary.url().resourceType("video").generate("earth"));

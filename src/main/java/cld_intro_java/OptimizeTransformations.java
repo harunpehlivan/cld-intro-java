@@ -1,6 +1,7 @@
 package cld_intro_java;
 
 import com.cloudinary.Cloudinary;
+import com.cloudinary.Transformation;
 
 public class OptimizeTransformations {
 	@SuppressWarnings("rawtypes")
