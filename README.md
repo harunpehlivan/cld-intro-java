@@ -74,17 +74,17 @@ Cloudinary provides CLOUDINARY_URL as an environment variable KEY.  You can copy
 
 **Edit Configuration**  
 
-<img width="400" src="./images/edit-configuration-intellij.png" alt="Edit Configuration">
+<img width="600" src="./images/edit-configuration-intellij.png" alt="Edit Configuration">
 
 **Add Environment Variables**  
 
-<img width="400" src="./images/env-variables-intellij.png" alt="Add Environment Variables">
+<img width="600" src="./images/env-variables-intellij.png" alt="Add Environment Variables">
 
 ### Using VS Code with Java Extensions
 
 Add CLOUDINARY_URL to a `.env` key in the `.vscode/launch.json`. We have git ignored `.vscode`, so your API_SECRET will not get checked in.
 
-<img width="400" src="./images/vscode-launch-credentials.png" alt="Adding Credentials to .vscode/launch.json">
+<img width="600" src="./images/vscode-launch-credentials.png" alt="Adding Credentials to .vscode/launch.json">
 
 ### Code Runners
 
