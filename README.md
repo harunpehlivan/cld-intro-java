@@ -21,7 +21,7 @@ We are supplying a `pom.xml` file.  You'll find these dependencies have been add
 
 See [Cloudinary Documentation on Maven](https://cloudinary.com/documentation/java_integration#choosing_the_right_maven_package) for more information about Cloudinary Maven libraries.
 
-For many IDE's like Visual Studio Code (and Intellij?), you won't need to install Maven.  They will take care of importing the library and plugin dependencies.
+For many IDE's like Visual Studio Code, you won't need to install Maven.  They will take care of importing the library and plugin dependencies.
 
 ### IDE
 
@@ -70,13 +70,19 @@ Cloudinary provides CLOUDINARY_URL as an environment variable KEY.  You can copy
 
 <img width="400" src="./images/cloudinary-url.jpg" alt="CLOUDINARY_URL">
 
-#### Using IntelliJ
+### Using IntelliJ
 
-**get a screenshot of adding CLOUDINARY_URL to Intellij**
+**Edit Configuration**  
 
-#### Using VS Code with Java Extensions
+<img width="400" src="./images/edit-configuration-intellij.png" alt="Edit Configuration">
 
-We have git ignored `.vscode`, so your API_SECRET will not get checked in.
+**Add Environment Variables**  
+
+<img width="400" src="./images/env-variables-intellij.png" alt="Add Environment Variables">
+
+### Using VS Code with Java Extensions
+
+Add CLOUDINARY_URL to a `.env` key in the `.vscode/launch.json`. We have git ignored `.vscode`, so your API_SECRET will not get checked in.
 
 <img width="400" src="./images/vscode-launch-credentials.png" alt="Adding Credentials to .vscode/launch.json">
 
