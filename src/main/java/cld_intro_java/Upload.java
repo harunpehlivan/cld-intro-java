@@ -62,7 +62,7 @@ public class Upload {
 //					ObjectUtils.asMap("folder", "pets/my_favorite")));
 
 			// Upload a remote asset
-//			CourseUtils.jsonPrint(cloudinary.uploader().upload("https://cdn.pixabay.com/photo/2015/03/26/09/39/cupcakes-690040__480.jpg", 
+//			CourseUtils.jsonPrint(cloudinary.uploader().upload("https://cloudinary-training.github.io/cld-intro-java/assets/chick.jpg", 
 //					ObjectUtils.emptyMap()));
 
 		} catch (Exception e) {

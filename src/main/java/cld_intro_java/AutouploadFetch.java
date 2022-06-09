@@ -10,7 +10,7 @@ public class AutouploadFetch {
 		try {
 			// Fetch from a remote server (no Upload API)
 //			System.out.println(cloudinary.url().type("fetch")
-//					.generate("https://cdn.pixabay.com/photo/2015/03/26/09/39/cupcakes-690040__480.jpg"));
+//					.generate("https://cloudinary-training.github.io/cld-intro-java/assets/chick.jpg"));
 
 			// Map "remote-media" to
 			// "https://cloudinary-training.github.io/cld-advanced-concepts/assets/
