@@ -10,7 +10,7 @@ The Cloudinary Java SDK will run on Java 6 and any higher version. For purposes 
 
 
 ### Maven
-The Cloudinary libraries are made available with Maven.  This repo includes a full Eclipse project configured with Cloudinary libraries.
+The Cloudinary libraries are made available with Maven.  This repo includes a project configured with Cloudinary libraries.
 
 We are supplying a `pom.xml` file.  You'll find these dependencies have been added to support this training.
 
