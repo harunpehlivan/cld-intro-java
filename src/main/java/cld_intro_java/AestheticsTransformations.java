@@ -12,9 +12,8 @@ public class AestheticsTransformations {
 		try {
 
 			// Radius rounded corners and transparent background
-			// System.out
-			// 		.println(cloudinary
-			// 				.url().transformation(new Transformation().width(300).height(300).crop("thumb")
+		    // System.out
+			//  		.println(cloudinary.url().transformation(new Transformation().width(300).height(300).crop("thumb")
 			// 				.gravity("auto").fetchFormat("auto").quality("auto").radius("max"))
 			// 				.generate("dog.jpg"));
 
@@ -44,14 +43,9 @@ public class AestheticsTransformations {
 			// layer
 			// System.out.println(cloudinary.url()
 			// 		.transformation(new Transformation().width(300).height(300).crop("thumb").gravity("face")
-			// 				.radius("max").effect("grayscale").chain().effect("tint:40:magenta").chain()
-			// 				.fetchFormat("auto").quality("auto"))
+			// 		.radius("max").effect("grayscale").chain().effect("tint:40:magenta").chain()
+			// 		.fetchFormat("auto").quality("auto"))
 			// 		.generate("face.jpg"));
-
-			// Outline effect for transparent images
-			// System.out.println(cloudinary.url().transformation(
-			// 		new Transformation().width(300).crop("scale").quality("auto").effect("outline:15").color("orange"))
-			// 		.generate("grapes.png"));
 
 			// Improve color, contrast, lightness
 			// System.out.println(cloudinary.url()
@@ -66,6 +60,12 @@ public class AestheticsTransformations {
 			// 				.url().transformation(new Transformation().width(800).height(600).crop("fill")
 			// 				.gravity("auto").fetchFormat("auto").quality("auto").effect("cartoonify"))
 			// 				.generate("eagle-fish.jpg"));
+
+			// Outline effect for transparent images
+			// System.out.println(cloudinary.url().transformation(
+			// 		new Transformation().width(300).crop("scale").effect("outline:15").color("orange")
+			// 		.quality("auto").fetchFormat("auto"))
+			// 		.generate("grapes.png"));
 
 			// Overlay
 			// Text over image
