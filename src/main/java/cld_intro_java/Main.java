@@ -21,7 +21,7 @@ public class Main {
 
 //		OptimizeTransformations.runner(cloudinary);
 
-//		AestheticsTransformations.runner(cloudinary);
+		AestheticsTransformations.runner(cloudinary);
 
 //		Presets.runner(cloudinary);
 
