@@ -9,24 +9,22 @@ public class Main {
 		cloudinary.config.secure = true;
 		System.out.println(cloudinary.config.cloudName);
 
-//		Upload.runner(cloudinary);
+		// Upload.runner(cloudinary);
 
-//		CloudinaryUtils.runner(cloudinary);
+		// CloudinaryUtils.runner(cloudinary);
 
-//		AutouploadFetch.runner(cloudinary);
+		// AutouploadFetch.runner(cloudinary);
 
-//		Manage.runner(cloudinary);
+		// Manage.runner(cloudinary);
 
-//		UploadForTransformations.runner(cloudinary);
+		// UploadForTransformations.runner(cloudinary);
 
-//		OptimizeTransformations.runner(cloudinary);
+		// OptimizeTransformations.runner(cloudinary);
 
-		AestheticsTransformations.runner(cloudinary);
+		// AestheticsTransformations.runner(cloudinary);
 
-//		Presets.runner(cloudinary);
+		// Presets.runner(cloudinary);
 
-//		NamedTransformations.runner(cloudinary);
-
+		// NamedTransformations.runner(cloudinary);
 	}
-
 }

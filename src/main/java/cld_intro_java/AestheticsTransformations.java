@@ -15,29 +15,29 @@ public class AestheticsTransformations {
 		    // System.out
 			//  		.println(cloudinary.url().transformation(new Transformation().width(300).height(300).crop("thumb")
 			// 				.gravity("auto").fetchFormat("auto").quality("auto").radius("max"))
-			// 				.generate("dog.jpg"));
+			// 				.generate("dog"));
 
 			// Borders '10px_solid_rgb:bde4fb'
 			// System.out
 			// 	.println(cloudinary.url()
 			// 		.transformation(new Transformation().border("10px_solid_rgb:E30B5D").width(400).height(400)
 			// 		.crop("fill").gravity("auto").fetchFormat("auto").quality("auto").radius("max"))
-			// 		.generate("blackberry.jpg"));
+			// 		.generate("blackberry"));
 
-			// crop thumb
+			// resize to a square and pad
 			// change AR to a square
 			// System.out
 			// 		.println(cloudinary.url()
-			// 				.transformation(new Transformation().width(300).height(300).crop("thumb").gravity("auto")
-			// 				.fetchFormat("auto").quality("auto").radius("max").background("red"))
-			// 				.generate("face.jpg"));
+			// 				.transformation(new Transformation().width(300).height(300).crop("pad")
+			// 				.fetchFormat("auto").quality("auto").background("red"))
+			// 				.generate("face"));
 
 			// Effects and Filters
 			// color tint
 			// System.out.println(cloudinary.url()
 			// 		.transformation(new Transformation().width(300).height(300).crop("thumb").gravity("face")
 			// 		.fetchFormat("auto").quality("auto").radius("max").effect("tint:40:magenta"))
-			// 		.generate("face.jpg"));
+			// 		.generate("face"));
 
 			// Duotone: chained transformation grayscale + tint, each effect needs its own
 			// layer
@@ -45,7 +45,7 @@ public class AestheticsTransformations {
 			// 		.transformation(new Transformation().width(300).height(300).crop("thumb").gravity("face")
 			// 		.radius("max").effect("grayscale").chain().effect("tint:40:magenta").chain()
 			// 		.fetchFormat("auto").quality("auto"))
-			// 		.generate("face.jpg"));
+			// 		.generate("face"));
 
 			// Improve color, contrast, lightness
 			// System.out.println(cloudinary.url()

@@ -14,12 +14,12 @@ public class NamedTransformations {
 			Api api = cloudinary.api();
 
 			// Create a simple named transformation from a string
-//			System.out.println(
-//					api.createTransformation("standard", "w_200,h_200,c_thumb,g_auto", ObjectUtils.emptyMap()));
+			// System.out.println(
+			// 		api.createTransformation("standard", "w_200,h_200,c_thumb,g_auto", ObjectUtils.emptyMap()));
 
 			// Use named transformation standard
-//			System.out.println(
-//					cloudinary.url().transformation(new Transformation().named("standard")).generate("face.jpg"));
+			// System.out.println(
+			// 		cloudinary.url().transformation(new Transformation().named("standard")).generate("cheesecake"));
 
 			// Use named transform with f_auto
 //			System.out

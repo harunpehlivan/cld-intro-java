@@ -60,12 +60,12 @@ public class OptimizeTransformations {
 //					.generate("working"));
 //
 //			// Format - Add auto format
-//			System.out.println(cloudinary.url()
-//					.transformation(new Transformation().height(400).crop("fill").gravity("auto").fetchFormat("auto"))
-//					.generate("lake"));
+			// System.out.println(cloudinary.url()
+			// 		.transformation(new Transformation().height(400).crop("fill").gravity("auto").fetchFormat("auto"))
+			// 		.generate("lake"));
 
 			// Compression using quality
-//			System.out.println(cloudinary.url().transformation(new Transformation().quality("auto")).generate("lake"));
+			// System.out.println(cloudinary.url().transformation(new Transformation().quality("auto")).generate("shirt_only"));
 
 			// Auto everything - format and quality
 //			System.out.println(cloudinary.url().transformation(
