@@ -82,9 +82,14 @@ Cloudinary provides CLOUDINARY_URL as an environment variable KEY.  You can copy
 
 ### Using VS Code with Java Extensions
 
+Add Java Extension pack to your VS Code installation: [Java Extensions for VS Code](https://code.visualstudio.com/docs/java/extensions).
 Add CLOUDINARY_URL to a `.env` key in the `.vscode/launch.json`. We have git ignored `.vscode`, so your API_SECRET will not get checked in.
 
 <img width="800" src="./images/vscode-launch-credentials.png" alt="Adding Credentials to .vscode/launch.json">
+
+You will see `run | debug` links above the main method in `main.java`.  Click run to execute.
+
+<img width="800" src="./images/vscode-java-run.png" alt="Run Java in VS Code">
 
 ### Code Runners
 
