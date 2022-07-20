@@ -12,6 +12,8 @@ public class UploadForTransformations {
 		System.out.println(
 				cloudinary.uploader().upload("./assets/cheesecake.jpg", ObjectUtils.asMap("public_id", "cheesecake")));
 		System.out.println(
+					cloudinary.uploader().upload("./assets/eagle-fish.jpg", ObjectUtils.asMap("public_id", "eagle-fish")));
+		System.out.println(
 				cloudinary.uploader().upload("./assets/blackberry.jpg", ObjectUtils.asMap("public_id", "blackberry")));
 		System.out.println(cloudinary.uploader().upload("./assets/dog.jpg", ObjectUtils.asMap("public_id", "dog")));
 		System.out.println(cloudinary.uploader().upload("./assets/face.jpg", ObjectUtils.asMap("public_id", "face")));
