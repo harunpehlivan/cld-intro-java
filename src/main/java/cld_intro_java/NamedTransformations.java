@@ -3,6 +3,8 @@ package cld_intro_java;
 import com.cloudinary.Api;
 import com.cloudinary.Cloudinary;
 import com.cloudinary.Transformation;
+import com.cloudinary.transformation.Layer;
+import com.cloudinary.transformation.TextLayer;
 import com.cloudinary.utils.ObjectUtils;
 
 public class NamedTransformations {
@@ -14,12 +16,12 @@ public class NamedTransformations {
 			Api api = cloudinary.api();
 
 			// Create a simple named transformation from a string
-			// System.out.println(
-			// 		api.createTransformation("standard", "w_200,h_200,c_thumb,g_auto", ObjectUtils.emptyMap()));
+//			 System.out.println(
+//			 		api.createTransformation("standard", "w_150,h_150,c_thumb,g_auto", ObjectUtils.emptyMap()));
 
 			// Use named transformation standard
-			// System.out.println(
-			// 		cloudinary.url().transformation(new Transformation().named("standard")).generate("cheesecake"));
+//			 System.out.println(
+//			 		cloudinary.url().transformation(new Transformation().named("standard")).generate("cheesecake"));
 
 			// Use named transform with f_auto
 //			System.out
